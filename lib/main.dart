@@ -1,6 +1,7 @@
 
 import 'package:google_fonts/google_fonts.dart';
-import 'package:guia_turismo/Pages/home_pages.dart';
+import 'package:guia_turismo/Pages/home_page.dart';
+
 import 'package:guia_turismo/Provider/distrito_provider.dart';
 import 'package:guia_turismo/Provider/recursos_provider.dart';
 import 'package:provider/provider.dart';
@@ -45,11 +46,11 @@ class MyApp extends StatelessWidget {
       title: 'Urubamba guia',
       initialRoute: 'home',
       routes: {
-        'home':(context) =>Homepage(),//HomeScreen(),
+        'home':(context) => HomePage(),
         //'details':(context) => const tTweenAnimationBuilder(productos: [],)
       },
-      theme:ThemeData.light().copyWith(
-        appBarTheme: const AppBarTheme(color: Colors.indigo),
+      theme:ThemeData(
+       
         textTheme: GoogleFonts.openSansCondensedTextTheme()
       ) ,
       
